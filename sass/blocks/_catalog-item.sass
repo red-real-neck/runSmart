@@ -1,0 +1,107 @@
+.catalog-item
+    width: 303px
+    min-height: 458px
+    background: #FFFFFF
+    border: 2px solid #E8E8E8
+    padding: 20px 18px
+    overflow: hidden
+    margin-top: 20px
+    &__img
+        display: block
+        margin: 0 auto
+        max-width: 100%
+        height: 200px
+    &__subtitle
+        font-weight: 700
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        color: #0D0D0D
+        margin-top: 15px
+    &__descr
+        align-self: center
+        width: 250px
+        font-weight: 300
+        font-size: 14px
+        line-height: 22px
+        text-align: center
+        color: #0D0D0D
+        margin-top: 15px
+    &__link
+        display: block
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        text-decoration-line: underline
+        color: #C70101
+        margin-top: 10px
+    &__back
+        display: block
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        text-align: center
+        text-decoration-line: underline
+        color: #C70101
+        margin-top: 10px
+    &__divider
+        align-self: center
+        margin-top: 17px
+        width: 100%
+        height: 2px
+        background: #E8E8E8
+    &__footer
+        display: flex
+        justify-content: space-between
+        padding-top: 17px
+    &__throwline-price
+        font-weight: 300
+        font-size: 14px
+        text-decoration: line-through
+        color: #555555
+        line-height: 14px
+    &__actual-price
+        font-weight: 700
+        font-size: 20px
+        color: #050505
+        line-height: 20px
+    &__wrapper
+        display: flex
+        width: calc(200% + 40px)
+    &__content
+        width: 50%
+        margin-right: 0px
+        transform: translateX(-100%)
+        transition: 0.5s all
+        &_active
+            transform: translateX(0%)
+            margin-right: 20px
+    &__list 
+        width: 50%
+        margin-left: 20px
+        transform: translateX(0%)
+        padding-right: 20px
+        transition: 0.5s all
+        margin-bottom: 0
+        padding-left: 19px
+        list-style-type: none
+        &_active
+            transform: translateX(-100%)
+            margin-left: 0px
+    &__list-item
+        position: relative
+        width: 251px
+        font-weight: 300
+        font-size: 14px
+        line-height: 21px
+        color: #555555;
+        margin-bottom: 16px
+        &:before
+            position: absolute
+            content: ""
+            width: 5px
+            height: 5px
+            background-color: $main-color
+            top: 6px
+            left: -15px
